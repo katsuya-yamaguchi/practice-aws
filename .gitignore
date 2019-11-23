@@ -1,0 +1,90 @@
+### https://raw.github.com/github/gitignore/097db81c08b138dea7cb031eb18eeb16afe44bdf/Global/OSX.gitignore
+
+sample_apps/.DS_Store
+sample_apps/.AppleDouble
+sample_apps/.LSOverride
+
+# Icon must end with two \r
+sample_apps/Icon
+
+
+# Thumbnails
+sample_apps/._*
+
+# Files that might appear on external disk
+sample_apps/.Spotlight-V100
+sample_apps/.Trashes
+
+# Directories potentially created on remote AFP share
+sample_apps/.AppleDB
+sample_apps/.AppleDesktop
+sample_apps/Network Trash Folder
+sample_apps/Temporary Items
+sample_apps/.apdisk
+
+### https://raw.github.com/github/gitignore/097db81c08b138dea7cb031eb18eeb16afe44bdf/Ruby.gitignore
+
+sample_apps/*.gem
+sample_apps/*.rbc
+sample_apps/.config
+sample_apps/coverage/
+sample_apps/InstalledFiles
+sample_apps/pkg/
+sample_apps/spec/reports/
+sample_apps/test/tmp/
+sample_apps/test/version_tmp/
+sample_apps/tmp/
+
+## Specific to RubyMotion:
+sample_apps/.dat*
+sample_apps/.repl_history
+sample_apps/build/
+
+## Documentation cache and generated files:
+sample_apps/.yardoc/
+sample_apps/_yardoc/
+sample_apps/doc/
+sample_apps/rdoc/
+
+## Environment normalisation:
+sample_apps/.bundle/
+sample_apps/lib/bundler/man/
+
+# for a library or gem, you might want to ignore these files since the code is
+# intended to run in multiple environments; otherwise, check them in:
+# Gemfile.lock
+# .ruby-version
+# .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+sample_apps/.rvmrc
+
+
+### https://raw.github.com/github/gitignore/097db81c08b138dea7cb031eb18eeb16afe44bdf/Rails.gitignore
+
+sample_apps/*.rbc
+sample_apps/capybara-*.html
+sample_apps/.rspec
+sample_apps/log
+sample_apps/tmp
+sample_apps/db/*.sqlite3
+sample_apps/public/system
+sample_apps/coverage/
+sample_apps/spec/tmp
+sample_apps/**.orig
+sample_apps/rerun.txt
+sample_apps/pickle-email-*.html
+
+# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+sample_apps/config/initializers/secret_token.rb
+sample_apps/config/secrets.yml
+
+## Environment normalisation:
+sample_apps/.bundle
+sample_apps/vendor/bundle
+
+# these should all be checked in to normalise the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+sample_apps/.rvmrc
