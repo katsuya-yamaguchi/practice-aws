@@ -1,0 +1,25 @@
+version: '2'
+services:
+  app:
+    build: .
+    environment:
+      RAILS_ENV: development
+      DATABASE_URL: mysql2://root:pass@db:3306
+      MYSQL_ROOT_PASSWORD: 'pass'
+    ports:
+      - '8888:8888'
+    volumes:
+      - .:/sample_apps
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7.25
+    environment:
+      MYSQL_ROOT_PASSWORD: 'pass'
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql-data:/var/lib/mysql
+volumes:
+  mysql-data:
+    driver: local
