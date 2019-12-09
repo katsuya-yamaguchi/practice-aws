@@ -92,3 +92,4 @@ sample_apps/.rvmrc
 venv
 
 **/.terraform/*
+**/key_pair/*
