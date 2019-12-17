@@ -3,7 +3,7 @@ terraform {
   backend "s3" {
     bucket  = "practice-katsuya-tfstate"
     region  = "ap-northeast-1"
-    key     = "terraform.tfstate"
+    key     = "prod/terraform.tfstate"
     profile = "private-aws_SA_001"
     encrypt = true
   }
@@ -15,11 +15,11 @@ provider "aws" {
 }
 
 module "vpc" {
-  source = "./network/vpc"
+  source = "../modules/network/vpc"
 }
 
 module "security_group" {
-  source = "./network/security_group"
+  source = "../modules/network/security_group"
   vpc_id = "${module.vpc.vpc_id}"
 }
 

@@ -1,5 +1,0 @@
-Host kujira_plesk
-  HostName 54.64.63.157
-  Port    22
-  User    centos
-  IdentityFile ./kujira_plesk
