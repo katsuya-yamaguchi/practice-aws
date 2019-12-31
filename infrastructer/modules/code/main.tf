@@ -15,8 +15,8 @@ resource "aws_codedeploy_app" "practice" {
 }
 
 resource "aws_iam_role" "codedeploy" {
-  name   = "practice-codedeploy"
-  path   = "/"
+  name               = "practice-codedeploy"
+  path               = "/"
   assume_role_policy = "${file("${path.module}/codedeploy_policy.json")}"
 }
 

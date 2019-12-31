@@ -29,10 +29,11 @@ module "vpc" {
   az_c                            = "ap-northeast-1c"
 }
 
-#module "security_group" {
-#  source = "../modules/network/security_group"
-#  vpc_id = "${module.vpc.vpc_id}"
-#}
+module "security_group" {
+  source = "../modules/network/security_group"
+
+  vpc_id = "${module.vpc.vpc_id}"
+}
 
 
 #module "ec2" {
